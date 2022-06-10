@@ -1,0 +1,93 @@
+/*
+ * Peri_Uart.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#include "Peri_Adc.h"
+#include "adc.h"
+
+void Peri_Adc_Init(uint8_t adc_num)
+{
+	switch(adc_num)
+	{
+	case PERI_ADC1:
+		MX_ADC1_Init();
+		break;
+
+	case PERI_ADC2:
+
+		break;
+
+	case PERI_ADC3:
+
+		break;
+
+	default:
+			break;
+	}
+}
+
+void Peri_Adc_DeInit(ADC_HandleTypeDef* adcHandle)
+{
+	HAL_ADC_DeInit(adcHandle);
+}
+
+void Peri_Adc_Start(uint8_t mod, ADC_HandleTypeDef* adcHandle,uint32_t *pData, uint32_t Length)
+{
+	switch(mod)
+	{
+	case PERI_ADC_POLL:
+		HAL_ADC_Start(adcHandle);
+		break;
+
+	case PERI_ADC_IT:
+		HAL_ADC_Start_IT(adcHandle);
+		break;
+
+	case PERI_ADC_DMA:
+		HAL_ADC_Start_DMA(adcHandle,pData,Length);
+		break;
+
+	default:
+		break;
+	}
+}
+
+void Peri_Adc_Stop(uint8_t mod, ADC_HandleTypeDef* adcHandle)
+{
+	switch(mod)
+	{
+	case PERI_ADC_POLL:
+		HAL_ADC_Stop(adcHandle);
+		break;
+
+	case PERI_ADC_IT:
+		HAL_ADC_Stop_IT(adcHandle);
+		break;
+
+	case PERI_ADC_DMA:
+		HAL_ADC_Stop_DMA(adcHandle);
+		break;
+
+	default:
+			break;
+	}
+}
+
+void Peri_Adc_Poll_Int_Get(ADC_HandleTypeDef* adcHandle,uint32_t *buf,uint8_t len)
+{
+	uint8_t count=0;
+
+	for(count=0;count<len;count++)
+	{
+		HAL_ADC_PollForConversion(adcHandle, 100);
+		*buf=HAL_ADC_GetValue(adcHandle);
+	}
+}
+
+void Peri_Adc_DMA_Get(ADC_HandleTypeDef* adcHandle,uint32_t *src,uint32_t *det, uint8_t len)
+{
+	Peri_Adc_Stop(PERI_ADC_DMA,adcHandle);
+}

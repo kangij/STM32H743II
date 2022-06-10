@@ -1,0 +1,20 @@
+/*
+ * Peri_Uart.h
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#ifndef BSP_PERI_ADC_H_
+#define BSP_PERI_ADC_H_
+
+#include "main.h"
+
+enum PERI_ADC_IP_NUM
+{
+	PERI_ADC1=0,
+	PERI_ADC2=1,
+	PERI_ADC3=2,
+};
+
+#endif /* BSP_PERI_PERI_UART_H_ */

@@ -1,0 +1,8 @@
+/*
+ * Peri_Uart.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#include "Peri/Uart/Peri_Uart.h"

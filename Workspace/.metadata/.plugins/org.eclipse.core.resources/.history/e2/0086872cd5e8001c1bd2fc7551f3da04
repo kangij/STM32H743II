@@ -1,0 +1,38 @@
+/*
+ * Peri_Uart.h
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#ifndef BSP_PERI_UART_H_
+#define BSP_PERI_UART_H_
+
+#include "main.h"
+#include "usart.h"
+
+#include "stdio.h" // Must Release Except
+#include "stdlib.h"
+
+enum PERI_UART_TRASNMIT_MOD
+{
+	PERI_UART_TRANS_NORMAL=0,
+	PERI_UART_TRANS_INT,
+	PERI_UART_TRANS_DMA,
+};
+
+enum PERI_UART_RECEIVE_MOD
+{
+	PERI_UART_RCV_NORMAL=0,
+	PERI_UART_RCV_INT,
+	PERI_UART_RCV_DMA,
+};
+
+
+enum PERI_UART_STATUS
+{
+	PERI_UART_OFF=0,
+	PERI_UART_ON,
+};
+
+#endif /* BSP_PERI_PERI_UART_H_ */

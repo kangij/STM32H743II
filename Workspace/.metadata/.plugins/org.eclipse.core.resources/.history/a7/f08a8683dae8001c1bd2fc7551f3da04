@@ -1,0 +1,14 @@
+/*
+ * debug.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+#include "Debug.h"
+
+void Driver_Uart_Debug_Init(void)
+{
+	Peri_Uart_Init(PERI_UART1);
+
+}
+

@@ -1,0 +1,15 @@
+/*
+ * debug.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+#ifndef BSP_DRIVER_DEBUG_H_
+#define BSP_DRIVER_DEBUG_H_
+
+#include "Peri_Uart.h"
+#include "usart.h"
+
+#define DEBUG_UART_PORT
+
+#endif

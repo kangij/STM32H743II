@@ -1,0 +1,16 @@
+Peri_Uart.c:19:6:Peri_Uart_Init	16	static
+Peri_Uart.c:60:6:Peri_Uart_DeInit	16	static
+Peri_Uart.c:66:6:Peri_Uart_BuadRate_Change	16	static
+Peri_Uart.c:72:6:Peri_Uart_Trasmit	24	static
+Peri_Uart.c:93:6:Peri_Uart_Receive	24	static
+Peri_Uart.c:114:6:Peri_Uart_DMA_Control	16	static
+Peri_Uart.c:135:6:Peri_Uart_Abort_Control	16	static
+Peri_Uart.c:168:6:Peri_Uart_Status_Check	4	static
+Peri_Uart.c:173:6:HAL_UART_TxHalfCpltCallback	16	static
+Peri_Uart.c:178:6:HAL_UART_TxCpltCallback	16	static
+Peri_Uart.c:183:6:HAL_UART_RxHalfCpltCallback	16	static
+Peri_Uart.c:188:6:HAL_UART_RxCpltCallback	16	static
+Peri_Uart.c:193:6:HAL_UART_ErrorCallback	16	static
+Peri_Uart.c:198:6:HAL_UART_AbortCpltCallback	16	static
+Peri_Uart.c:203:6:HAL_UART_AbortTransmitCpltCallback	16	static
+Peri_Uart.c:208:6:HAL_UART_AbortReceiveCpltCallback	16	static

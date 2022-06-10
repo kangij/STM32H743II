@@ -1,0 +1,27 @@
+/*
+ * Peri_Uart.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#include "Peri_Adc.h"
+#include "adc.h"
+
+void Peri_Adc_Init(uint8_t adc_num)
+{
+	switch(adc_num)
+	{
+	case PERI_ADC1:
+		MX_ADC1_Init();
+		break;
+
+	case PERI_ADC2:
+
+		break;
+
+	case PERI_ADC3:
+
+		break;
+	}
+}

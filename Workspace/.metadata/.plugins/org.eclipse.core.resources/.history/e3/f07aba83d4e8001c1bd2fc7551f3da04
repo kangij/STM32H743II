@@ -1,0 +1,50 @@
+/*
+ * Peri_Uart.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+
+#include "Peri_Uart.h"
+
+void Peri_Uart_Init(void)
+{
+	MX_USART1_UART_Init();
+}
+
+void Peri_Uart_Trasmit(uint8_t mod,UART_HandleTypeDef* uartHandle, uint8_t *data, uint8_t size)
+{
+	switch(mod)
+	{
+	case PERI_UART_TRANS_NORMAL:
+		HAL_UART_Transmit(uartHandle, data, size, 100);
+		break;
+
+	case PERI_UART_TRANS_INT:
+		HAL_UART_Transmit_IT(uartHandle, data, size);
+		break;
+
+	case PERI_UART_TRANS_DMA:
+		HAL_UART_Transmit_DMA(uartHandle, data, size);
+		break;
+	}
+}
+
+void Peri_Uart_Receive(uint8_t mod,UART_HandleTypeDef* uartHandle, uint8_t *data, uint8_t size)
+{
+	switch(mod)
+	{
+	case PERI_UART_RCV_NORMAL:
+		HAL_UART_Receive(uartHandle, data, size, 100);
+		break;
+
+	case PERI_UART_RCV_INT:
+		HAL_UART_Transmit_IT(uartHandle, data, size);
+		break;
+
+	case PERI_UART_RCV_DMA:
+		HAL_UART_Transmit_DMA(uartHandle, data, size);
+		break;
+	}
+}

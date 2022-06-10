@@ -1,0 +1,22 @@
+/*
+ * debug.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#include "Peri/ADC/Peri_Adc.h"
+#include "adc.h"
+
+#define USE_ADC_PORT (&hadc1)
+
+void Driver_ADC_Data_Init(void)
+{
+	Peri_Adc_Init(PERI_ADC1);
+	Peri_Adc_Start(PERI_ADC_POLL,USE_ADC_PORT,0,0,0);
+}
+
+void Driver_ADC_Test_Task(void)
+{
+
+}

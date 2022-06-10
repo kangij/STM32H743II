@@ -1,0 +1,18 @@
+/*
+ * debug.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+#include "Peri/Uart/Peri_Uart.h"
+#include "usart.h"
+
+#define DEBUG_UART_PORT (&huart1)
+#define DEBUG_BAUDRATE  (115200)
+
+void Driver_Uart_Debug_Init(void)
+{
+	Peri_Uart_Init(PERI_UART1);
+	Peri_Uart_BuadRate_Change(DEBUG_UART_PORT, DEBUG_BAUDRATE);
+}
+

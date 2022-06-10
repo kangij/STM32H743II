@@ -1,0 +1,8 @@
+/*
+ * debug.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+#include "Peri/ADC/Peri_Adc.h"

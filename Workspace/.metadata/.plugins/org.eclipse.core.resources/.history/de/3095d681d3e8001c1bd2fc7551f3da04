@@ -1,0 +1,15 @@
+/*
+ * Peri_Uart.c
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: kangi
+ */
+
+
+#include "Peri_Uart.h"
+
+void Peri_Uart_Init(void)
+{
+	MX_USART1_UART_Init();
+}
+
