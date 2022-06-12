@@ -1,4 +1,2 @@
-ADC_Data.c:16:6:Driver_ADC_Data_Init	8	static
-ADC_Data.c:24:13:Driver_ADC_Polling_Test	24	static
-ADC_Data.c:37:13:Driver_ADC_DMA_Test	16	static
-ADC_Data.c:48:6:Driver_ADC_Test_Task	8	static
+ADC_Data.c:60:6:Driver_ADC_Data_Init	4	static
+ADC_Data.c:65:6:Driver_ADC_Test_Task	4	static

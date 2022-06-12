@@ -13,6 +13,9 @@ RM := rm -rf
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include Core/BSP/Peri/Uart/subdir.mk
+-include Core/BSP/Peri/SPI/subdir.mk
+-include Core/BSP/Peri/I2S/subdir.mk
+-include Core/BSP/Peri/I2C/subdir.mk
 -include Core/BSP/Peri/ADC/subdir.mk
 -include Core/BSP/Driver/DEBUG/subdir.mk
 -include Core/BSP/Driver/ADC_Data/subdir.mk

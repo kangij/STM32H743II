@@ -26,6 +26,9 @@ Core/BSP/Driver/ADC_Data \
 Core/BSP/Driver/DEBUG \
 Core/BSP/Driver \
 Core/BSP/Peri/ADC \
+Core/BSP/Peri/I2C \
+Core/BSP/Peri/I2S \
+Core/BSP/Peri/SPI \
 Core/BSP/Peri/Uart \
 Core/Src \
 Core/Startup \

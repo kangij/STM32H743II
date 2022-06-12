@@ -1,10 +1,1 @@
-Peri_Adc.c:18:6:Peri_Adc_Init	16	static
-Peri_Adc.c:39:6:Peri_Adc_DeInit	16	static
-Peri_Adc.c:44:6:Peri_Adc_Start	24	static
-Peri_Adc.c:69:6:Peri_Adc_Stop	16	static
-Peri_Adc.c:90:6:Peri_Adc_Poll_Int_Get	40	static
-Peri_Adc.c:104:6:Peri_Adc_DMA_Get	32	static
-Peri_Adc.c:115:6:HAL_ADC_ConvCpltCallback	16	static
-Peri_Adc.c:119:6:HAL_ADC_ConvHalfCpltCallback	16	static
-Peri_Adc.c:123:6:HAL_ADC_LevelOutOfWindowCallback	16	static
-Peri_Adc.c:127:6:HAL_ADC_ErrorCallback	16	static
+Peri_Adc.c:137:6:Peri_Adc_Init	16	static
